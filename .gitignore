@@ -1,0 +1,16 @@
+# API keys and environment
+.env
+
+# Agent logs — may contain sensitive queries
+tool_log.jsonl
+
+# Cached embeddings
+doc_embeddings.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Mac OS
+.DS_Store
