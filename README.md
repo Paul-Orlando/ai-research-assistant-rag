@@ -44,3 +44,40 @@ potential hallucinations via cosine similarity grounding score.
 
 1. Clone the repo
 2. Install dependencies:
+
+pip install -r requirements.txt
+3. Set your API key:
+
+cp .env.example .env
+Add your OpenAI key to .env
+4. Run the tool:
+
+python research_tool.py
+---
+
+## Scaling the Knowledge Base
+
+Current knowledge base is hardcoded for demonstration.
+To scale, replace with ChromaDB, Pinecone, or FAISS:
+
+```python
+# documents = load_from_vectorstore()
+```
+
+---
+
+## Example Output
+
+User: What causes black holes?
+Answer:
+Black holes form from the gravitational collapse of massive stars.
+Grounding Score: 0.847  |  High — answer well grounded in context
+
+---
+
+## Author
+
+Paul Orlando
+Creative Technologist | AI Agent Developer | Data Analytics
+🌐 paulforlando.com
+💼 linkedin.com/in/paul-orlando-7841b5154/
